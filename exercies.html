@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>all css</title>
+  </head>
+  <body>
+    <div class=" container">
+      <div class="row">
+        <div class="col-md-4">
+        <h2>Text</h2>
+        <input id="mybtn1"type="text">
+        <h2>Time</h2>
+        <input id="mybtn2"type="text">
+        <h2>Css</h2>
+        <input id="mybtn3" type="text">
+        <br><br>
+        <button type="button" name="button">Ok</button>
+      </div>
+      <div class="col-sm-4 text-center card">
+        <div id="card"></div>
+      </div>
+    </div>
+  <script>
+
+  $(document).ready(function(){
+  $("button").click(function(){
+    var a = $("#mybtn1").val();
+    var b = Number($("#mybtn2").val());
+    var c = $("#mybtn3").val();
+
+    for (var i = 1; i <= b; i++) {
+    // $('#tt').append(a + '<br>');
+
+    // $("p").attr("style",c)
+    // $("p").append("<input>" + "<br>").text.value();
+    $("#card").append('<span class="card bg-info">' + a + '</span>').attr('style',c)
+  }
+    });
+  });
+
+  </script>
+  </body>
+</html>

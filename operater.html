@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <center>
+
+      <p id="a"></p>
+      <p id="b"></p>
+      <p id="c"></p>
+      <p id="d"></p>
+      <p id="e"></p>
+      <p id="f"></p>
+      <input type="text1" name="" value="" id="abc">
+      <button type="button" name="button" onclick ="hellow()">ok</button>
+
+  </body>
+  <script>
+      function hellow() {
+        var b = document.getElementById("abc").value;
+        for (var i = 1; i <= b; i++) {
+         document.getElementById('f').innerHTML = i;
+        }
+      }
+      var a = 10;
+      a += 450;
+      document.getElementById("a").innerHTML = a;
+      var b = 55 +"monika";
+      document.getElementById('b').innerHTML= b;
+      var d = myfun(12,5);
+      function myfun(a,b)
+      {
+          return a * b;
+      }
+      document.getElementById('c').innerHTML = d;
+      var detail={ name:"monika" , surname:"kasetiya" };
+      document.getElementById('d').innerHTML = detail.name;
+      var b ="hello good morning....how are your how's your day....";
+      document.getElementById('e').innerHTML = b.length;
+  </script>
+</html>

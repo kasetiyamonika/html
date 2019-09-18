@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="java.css">
+    <script src="js/jquery.min.js"></script>
+    <script>
+      function add(){
+        var ans = Number($("#one").val()) + Number($("#two").val());
+        $("#ans").val(ans);
+        $("#sum").html("+").attr('style', 'color: red');
+      }
+      function sub(){
+        var ans = Number($("#one").val()) - Number($("#two").val());
+        $("#ans").val(ans);
+        $("#sum").html("-").attr('style', 'color: blue');
+      }
+      function mult(){
+
+        var ans=Number($("#one").val()) * Number($("#two").val());
+        $("#ans").val(ans);
+        $("#sum").html("*").attr('style', 'color: #FFFF00');
+      }
+      function divi(){
+        var ans=Number($("#one").val()) / Number($("#two").val());
+        $("#ans").val(ans);
+        $("#sum").html("/").attr('style', 'color:#7FFF00');
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" name=""  id="one"value="">
+    <p id="sum"></p>
+    <input type="text" name="" id="two" value="">
+    <br><br>
+    <button type="button" name="button" onclick="add()">Add (+)</button>
+    <button type="button" name="button" onclick="sub()">sub (-)</button>
+    <button type="button" name="button" onclick="mult()">mult (*)</button>
+    <button type="button" name="button" onclick="divi()">divi (/)</button><br><br>
+    Ans:<input type="text" name="" id="ans" value="">
+  </body>
+</html>
